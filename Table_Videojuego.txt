@@ -1,0 +1,37 @@
+CREATE TABLE Videojuego (
+  ID_Juego INT AUTO_INCREMENT,
+  Titulo VARCHAR(100),
+  Plataforma VARCHAR(50),
+  Year_Release INT,
+  Idioma VARCHAR(50),
+  Genero VARCHAR(50),
+  Precio DECIMAL(10, 2),
+  exst INT,
+  video_link VARCHAR(100),
+  image longblob NOT NULL,
+  created datetime NOT NULL,
+  PRIMARY KEY (ID_Juego)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO Videojuego (ID_Juego, Titulo, Plataforma, Year_Release, Idioma, Genero, Precio, exst, video_link)
+VALUES
+  (null, 'The Legend of Zelda: Breath of the Wild', 'Nintendo Switch', 2017, 'Inglés', 'Aventura', 59.99, 100,'https://www.youtube.com/watch?v=Pi-MRZBP91I'),
+  (null, 'Grand Theft Auto V', 'PlayStation 4', 2013, 'Español', 'Acción', 29.99, 100, 'https://www.youtube.com/watch?v=hvoD7ehZPcM'),
+  (null, 'Minecraft', 'PC', 2011, 'Varios idiomas', 'Sandbox', 19.99, 1000, 'https://www.youtube.com/watch?v=1DhWXAiNgfQ'),
+  (null, 'FIFA 21', 'Xbox One', 2020, 'Varios idiomas', 'Deportes', 49.99, 100, 'https://www.youtube.com/watch?v=tuLAn9adQpI'),
+  (null, 'Assassins Creed Valhalla', 'Xbox Series X', 2020, 'Inglés', 'Acción-Aventura', 69.99, 100, 'https://www.youtube.com/watch?v=L0Fr3cS3MtY'),
+  (null, 'The Witcher 3: Wild Hunt', 'PlayStation 4', 2015, 'Varios idiomas', 'RPG', 39.99, 100, 'https://www.youtube.com/watch?v=c0i88t0Kacs'),
+  (null, 'Super Mario Odyssey', 'Nintendo Switch', 2017, 'Inglés', 'Plataformas', 49.99, 100, 'https://www.youtube.com/watch?v=wGQHQc_3ycE'),
+  (null, 'Call of Duty: Warzone', 'PC', 2020, 'Varios idiomas', 'Disparos', 0, 100, 'https://www.youtube.com/watch?v=0E44DClsX5Q'),
+  (null, 'Red Dead Redemption 2', 'PlayStation 4', 2018, 'Español', 'Acción-Aventura', 59.99, 1000, 'https://www.youtube.com/watch?v=eaW0tYpxyp0'),
+  (null, 'Among Us', 'iOS', 2018, 'Inglés', 'Multijugador', 4.99, 100, 'https://www.youtube.com/watch?v=CermGp8bwFE'),
+  (null, 'Fortnite', 'Android', 2017, 'Varios idiomas', 'Battle Royale', 0, 100, 'https://www.youtube.com/watch?v=P2JnTforl_4'),
+  (null, 'Overwatch 2', 'PC', 2016, 'Varios idiomas', 'Disparos', 19.99, 100, 'https://www.youtube.com/watch?v=1GGam7tHwts'),
+  (null, 'Cyberpunk 2077', 'Xbox Series X', 2020, 'Inglés', 'RPG', 59.99, 100, 'https://www.youtube.com/watch?v=reABCMNGM3w'),
+  (null, 'Super Smash Bros. Ultimate', 'Nintendo Switch', 2018, 'Inglés', 'Lucha', 59.99, 1000, 'https://www.youtube.com/watch?v=WShCN-AYHqA'),
+  (null, 'God of War', 'PlayStation 4', 2018, 'Español', 'Acción-Aventura', 39.99, 1000, 'https://www.youtube.com/watch?v=AN3jEjjcZ-k'),
+  (null, 'League of Legends', 'PC', 2009, 'Varios idiomas', 'MOBA', 0, 100, 'https://www.youtube.com/watch?v=mDYqT0_9VR4'),
+  (null, 'Pokémon Sword and Shield', 'Nintendo Switch', 2019, 'Varios idiomas', 'RPG', 59.99, 100, 'https://www.youtube.com/watch?v=uBYORdr_TY8'),
+  (null, 'Mortal Kombat 11', 'Xbox One', 2019, 'Inglés', 'Lucha', 29.99, 100, 'https://www.youtube.com/watch?v=UoTams2yc0s'),
+  (null, 'Animal Crossing: New Horizons', 'Nintendo Switch', 2020, 'Varios idiomas', 'Simulación', 59.99, 100, 'https://www.youtube.com/watch?v=_3YNL0OWio0'),
+  (null, 'The Elder Scrolls V: Skyrim', 'PC', 2011, 'Varios idiomas', 'RPG', 39.99, 1000, 'https://www.youtube.com/watch?v=JSRtYpNRoN0');

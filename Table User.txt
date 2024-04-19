@@ -1,0 +1,14 @@
+CREATE TABLE usuario (
+    Id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    Tipo_usuario VARCHAR(50),
+    Nom_usuario VARCHAR(255) UNIQUE,
+    Pass_usuario VARCHAR(4)
+);
+
+INSERT INTO usuario (Tipo_usuario, Nom_usuario, Pass_usuario)
+VALUES
+    ('Admin', 'admin01', 'abcd'),
+    ('User', 'cliente1', '1234'),
+    ('User', 'cliente2', '5678'),
+    ('User', 'cliente3', 'efgh'),
+    ('User', 'cliente4', '9012');

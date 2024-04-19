@@ -1,0 +1,24 @@
+create table Usuario_videojuego(
+Id_user int,
+foreign key (Id_user) references Usuario(Id_usuario),
+Id_vjuego int,
+foreign key (Id_vjuego) references Videojuego(ID_Juego)
+);
+
+
+INSERT INTO Usuario_videojuego(Id_user, Id_vjuego) 
+        VALUES ('2', '3');
+
+
+
+CREATE VIEW Vista_Usuario_Videojuego AS
+SELECT U.Id_usuario, U.Nom_usuario, V.ID_Juego, V.Titulo, V.Plataforma, V.Year_Release, V.Idioma, V.Genero, V.Precio
+FROM Usuario U
+JOIN Usuario_videojuego UV ON U.Id_usuario = UV.Id_user
+JOIN Videojuego V ON UV.Id_vjuego = V.ID_Juego;
+
+
+
+
+
+
